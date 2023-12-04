@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/index.js', // точка входа
+  entry: './src/index.ts', // точка входа
   output: {
     filename: 'bundle.js', // имя файла бандла
     path: path.resolve(__dirname, 'dist'), // папка для сборки
@@ -15,6 +15,11 @@ module.exports = {
   }), new MiniCssExtractPlugin()],
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.(?:js|mjs|cjs)$/,
         use: {
@@ -40,7 +45,11 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ]
-  }
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+ 
 
 };
 
