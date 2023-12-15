@@ -1,3 +1,5 @@
+/* eslint-disable no-plusplus */
+
 const details: string[] = [
   '7868190130M7522',
   '5303914400F9211',
@@ -14,3 +16,4 @@ for (let i = 0; i < details.length; i++) {
 }
 
 console.log(countOlder);
+
