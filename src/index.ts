@@ -1,4 +1,4 @@
-/* eslint-disable no-plusplus */
+import './style/style.css';
 
 const details: string[] = [
   '7868190130M7522',
