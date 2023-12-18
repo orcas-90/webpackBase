@@ -1,4 +1,5 @@
-import './style/style.css';
+// eslint-disable-next-line react/jsx-filename-extension
+import './style/index.scss';
 
 const details: string[] = [
   '7868190130M7522',
@@ -7,13 +8,14 @@ const details: string[] = [
 ];
 let countOlder = 0;
 
+// eslint-disable-next-line no-plusplus
 for (let i = 0; i < details.length; i++) {
   const agePassagenrs: number = Number(details[i][11] + details[i][12]);
 
   if (agePassagenrs > 60) {
+    // eslint-disable-next-line no-plusplus
     countOlder++;
   }
 }
 
 console.log(countOlder);
-
