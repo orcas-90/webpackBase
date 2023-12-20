@@ -1,4 +1,3 @@
-// eslint-disable-next-line react/jsx-filename-extension
 import './style/index.scss';
 
 const details: string[] = [
@@ -17,5 +16,4 @@ for (let i = 0; i < details.length; i++) {
     countOlder++;
   }
 }
-
 console.log(countOlder);
