@@ -1,4 +1,4 @@
-import './style/index.scss';
+import './style/index.css';
 
 const details: string[] = [
   '7868190130M7522',

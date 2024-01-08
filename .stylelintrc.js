@@ -6,6 +6,6 @@ module.exports = {
     rules: {
         'order/order': selectorOrdering,
         'order/properties-order': propertyOrdering,
-        'selector-class-pattern': /[a-z_\-]+/
+        'selector-class-pattern': /[a-z_\-]+/,
     },
 };
